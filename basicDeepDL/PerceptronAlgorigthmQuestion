@@ -1,0 +1,28 @@
+A 2 dimensional dataset for 2 classes is given to you. 
+
+Plot the data and comment whether the two classes are linearly seperable or not.
+
+Note that the top 500 rows are of class A and next 500 rows are of class B. 
+
+The dataset I have downloaded from NPTEL course https://drive.google.com/file/d/1ecV07EkXsAXSbukW2c_gNSGVJhC8eiFX/view?usp=sharing
+
+Disclaimer: I have gone through the NPTEL course on Deep learning. And this question was a part of assignment for week 1.
+            I will just try to use the dataset given to implement the perceptron algorithm.
+
+
+++++++++++++++++++++++++++++
+Perceptron Algorithm :-
+++++++++++++++++++++++++++++
+
+P <- inputs with label A in train dataset
+N <- inputs with label B in train dataset
+
+initialize w randomly
+
+while !convergence do :
+     Pick random x belonging to P U N (read P Union N)
+     if (x belongs to P and sum wx < 0)
+        w += x
+     elif (x belongs to N and sum wx > 0)
+        w -= x
+
